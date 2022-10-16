@@ -1,8 +1,10 @@
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import styles from '../styles/Card.module.css'
 import { Pokecard } from '../types/pokecard'
 import { Poke } from '../types/poketypes'
 import { Species } from '../types/species'
+
 
 export default function Card(pokemon: Pokecard) {
 
@@ -35,7 +37,7 @@ export default function Card(pokemon: Pokecard) {
         <a className={styles.card}  href={`/posts/${pokemon.entry_number}/${pokemon.pokemon_species.name}`}>
         <div >
                 <div className={styles.imgContainer} style={{backgroundColor: data?.color.name}}>
-                    <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.entry_number}.png`} alt="" />
+                    <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.entry_number}.png`} height={150} width={150} />
                 </div>
                 <p className={styles.name}>{pokemon.pokemon_species.name}</p>
                 <p className={styles.number}>N&#176;{pokemon.entry_number}</p>

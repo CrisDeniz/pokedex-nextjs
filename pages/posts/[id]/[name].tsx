@@ -2,7 +2,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { Pokecard } from "../../../types/pokecard"
 import styles from  "../../../styles/Details.module.css" 
-
+import Image from "next/image"
 import { Poke } from "../../../types/poketypes"
 import { Pokemon } from "../../../types/pokemon"
 
@@ -34,7 +34,7 @@ import { Pokemon } from "../../../types/pokemon"
 
     const {params} = context
 
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${params.name}/`)
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${params.id}/`)
     const responseTwo = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${params.id}/`)
 
     const data = await response.json()
@@ -50,13 +50,16 @@ import { Pokemon } from "../../../types/pokemon"
 
 export default function Details({data, data2}: {data: Poke , data2: { color : { name : string}}}) {
     
+
+  
+
     return(
       
         <div className={styles.container} >
         
            <div className={styles.title}>
                <div className={styles.imgContainer} style={{ backgroundColor: data2.color.name}}>
-                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data?.id}.png`} alt="" />
+                <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data?.id}.png`} width={210} height={210} />
                </div>
                 <h2>{data?.name}</h2>
                 <div className={styles.types}>
