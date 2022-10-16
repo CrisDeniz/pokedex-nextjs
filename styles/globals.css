@@ -8,6 +8,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    background: linear-gradient(90deg, rgb(135, 207, 147) ,rgb(235, 200, 255)  );
 }
 
 .next{

@@ -5,6 +5,7 @@ import styles from  "../../../styles/Details.module.css"
 import Image from "next/image"
 import { Poke } from "../../../types/poketypes"
 import { Pokemon } from "../../../types/pokemon"
+import Header from "../../../components/header"
 
 
 
@@ -56,7 +57,6 @@ export default function Details({data, data2}: {data: Poke , data2: { color : { 
     return(
       
         <div className={styles.container} >
-        
            <div className={styles.title}>
                <div className={styles.imgContainer} style={{ backgroundColor: data2.color.name}}>
                 <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data?.id}.png`} width={210} height={210} />

@@ -2,6 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import Header from '../components/header'
+import Loader from '../components/loading'
 import Card from '../components/pokecard'
 import styles from '../styles/Home.module.css'
 import { Pokemon } from '../types/pokemon'
@@ -36,9 +38,12 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <div className={styles.container}>
+    <div className={styles.home}>
+      <Header/>
+      <div className={styles.container}>
+      
       {!data && 
-        <p>Carregando..</p>
+        <Loader/>
       }
 
     {data && 
@@ -46,6 +51,7 @@ const Home: NextPage = () => {
             return <Card key={pokemon.entry_number} {...pokemon}/>
         }, )
     }
+    </div>
     </div>
   )
 }
