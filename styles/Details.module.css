@@ -1,0 +1,97 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background: rgb(0, 134, 223);
+    color: rgb(243, 243, 243);
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    box-shadow: 0 0 80px  rgb(201, 201, 201);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title img {
+    width: 200px;
+    height: 200px;
+}
+
+.title span {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 5px 10px 5px;
+    
+}
+
+.title h2 {
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+}
+
+.types span {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 55px;
+    height: 30px;
+    border-radius: 6px;
+    background: rgb(255, 177, 74);
+}
+
+.lineOne div,
+.lineTwo div  {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    border-radius: 6px;
+    background: rgb(255, 177, 74);
+}
+
+.lineOne,
+.lineTwo {
+    display: flex;
+    margin: 5px 0;
+    
+}
+.lineTwo {
+    margin: 15px 0;
+}
+
+.lineOne p:nth-child(1),
+.lineTwo p:nth-child(1){
+    font-size: 0.8rem;
+}
+
+.lineOne p ,
+.lineTwo p{
+    text-align:center;
+    margin: 2px 0 ;
+    text-transform: capitalize;
+}
+
+.imgContainer { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: wheat;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px 0 0 0 ;
+}
