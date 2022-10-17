@@ -49,9 +49,9 @@ export default function Card(pokemon: Pokecard) {
     }
 
     return(
-        <a className={styles.card} href={`/posts/${pokemon.entry_number}/${pokemon.pokemon_species.name}`}>
+        <a style={{backgroundColor: newColor(data?.color.name)}} className={styles.card} href={`/posts/${pokemon.entry_number}/${pokemon.pokemon_species.name}`}>
         <div >
-                <div className={styles.imgContainer} style={{backgroundColor: newColor(data?.color.name)}}>
+                <div className={styles.imgContainer} >
                     <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.entry_number}.png`} height={150} width={150} />
                 </div>
                 <p className={styles.name}>{pokemon.pokemon_species.name}</p>
