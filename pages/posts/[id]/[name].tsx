@@ -51,14 +51,27 @@ import Header from "../../../components/header"
 
 export default function Details({data, data2}: {data: Poke , data2: { color : { name : string}}}) {
     
+  function newColor(c : string | undefined) {
+    let color 
 
+    c === 'blue' ? color = 'rgb(145, 193, 255)':
+    c === 'green' ? color = 'rgb(200, 255, 149)':
+    c === 'red' ? color = 'rgb(255, 115, 115)':
+    c === 'yellow' ? color = 'rgb(255, 247, 142)':
+    c === 'brown' ? color = 'rgb(170, 95, 33)':
+    c === 'purple' ? color = 'rgb(168, 95, 252)':
+    c === 'black' ? color = 'rgb(10, 10, 10)':
+    color = c
+    
+    return color
+}
   
 
     return(
       
         <div className={styles.container} >
            <div className={styles.title}>
-               <div className={styles.imgContainer} style={{ backgroundColor: data2.color.name}}>
+               <div className={styles.imgContainer} style={{ backgroundColor: newColor(data2.color.name)}}>
                 <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data?.id}.png`} width={210} height={210} />
                </div>
                 <h2>{data?.name}</h2>
