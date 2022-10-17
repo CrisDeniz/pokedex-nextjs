@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     width: 30%;
-    background: rgb(255, 252, 216);
+    background: rgb(253, 247, 232);
     color: rgb(0, 0, 0);
     border-radius: 10px;
     margin: 20px 0 0 0;
@@ -45,7 +45,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 55px;
+    width: 58px;
     height: 30px;
     border-radius: 6px;
     color: white;
@@ -72,7 +72,7 @@
     
 }
 .lineTwo {
-    margin: 15px 0;
+    margin: 15px 0 25px 0;
 }
 
 .lineOne p:nth-child(1),
