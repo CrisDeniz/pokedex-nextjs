@@ -7,19 +7,19 @@
     border-radius: 8px;
     text-decoration: none;
     transition: 0.3s ease-in-out;
-    background: black;
+    background: rgb(0, 0, 0);
 }
 
 .name{
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1.4rem;
     font-weight: 600;
 }
 
 .number {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 600;
 }

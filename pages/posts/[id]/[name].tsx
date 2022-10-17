@@ -55,12 +55,13 @@ export default function Details({data, data2}: {data: Poke , data2: { color : { 
     let color 
 
     c === 'blue' ? color = 'rgb(145, 193, 255)':
-    c === 'green' ? color = 'rgb(200, 255, 149)':
+    c === 'green' ? color = 'rgb(138, 182, 36)':
     c === 'red' ? color = 'rgb(255, 115, 115)':
-    c === 'yellow' ? color = 'rgb(255, 247, 142)':
+    c === 'yellow' ? color = 'rgb(219, 197, 0)':
     c === 'brown' ? color = 'rgb(170, 95, 33)':
     c === 'purple' ? color = 'rgb(168, 95, 252)':
     c === 'black' ? color = 'rgb(10, 10, 10)':
+    c === 'white' ? color = 'rgb(220, 220, 220)':
     color = c
     
     return color
@@ -70,8 +71,8 @@ export default function Details({data, data2}: {data: Poke , data2: { color : { 
     let newTypeColor
 
     type === 'poison' ? newTypeColor = 'rgb(177, 93, 255)':
-    type === 'grass' ? newTypeColor = 'rgb(200, 255, 149)':
-    type === 'bug' ? newTypeColor = 'rgb(217, 255, 2)':
+    type === 'grass' ? newTypeColor = 'rgb(138, 190, 36)':
+    type === 'bug' ? newTypeColor = 'rgb(172, 180, 2)':
     type === 'fighting' ? newTypeColor = 'rgb(134, 49, 0)':
     type === 'electric' ? newTypeColor = 'rgb(255, 208, 0)':
     type === 'dragon' ? newTypeColor = 'rgb(124, 76, 255)':

@@ -37,12 +37,13 @@ export default function Card(pokemon: Pokecard) {
         let color 
 
         c === 'blue' ? color = 'rgb(145, 193, 255)':
-        c === 'green' ? color = 'rgb(200, 255, 149)':
+        c === 'green' ? color = 'rgb(138, 182, 36)':
         c === 'red' ? color = 'rgb(255, 115, 115)':
-        c === 'yellow' ? color = 'rgb(255, 247, 142)':
+        c === 'yellow' ? color = 'rgb(219, 197, 0)':
         c === 'brown' ? color = 'rgb(170, 95, 33)':
         c === 'purple' ? color = 'rgb(168, 95, 252)':
         c === 'black' ? color = 'rgb(10, 10, 10)':
+        c === 'white' ? color = 'rgb(215, 215, 215)':
         color = c
         
         return color
