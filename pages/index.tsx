@@ -31,8 +31,6 @@ const Home: NextPage = () => {
     }
   }
 
-  console.log(data);
-
   useEffect(() => {
     fetchData()
   }, [])
